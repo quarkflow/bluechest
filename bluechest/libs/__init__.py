@@ -1,0 +1,1 @@
+from .breast_cancer import predict
