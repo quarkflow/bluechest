@@ -1,5 +1,4 @@
-import io 
-import shutil 
+import io
 
 from fastapi import FastAPI, UploadFile, File
 from PIL import Image
@@ -28,6 +27,5 @@ async def create_upload_file(file: UploadFile = File(...)):
     # instanciate base predictor
     base_predictor = BasePredictor(scope=scope)
     results = base_predictor.predict(image=pil_image)
-
     return results
 
