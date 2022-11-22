@@ -3,7 +3,6 @@ import io
 from fastapi import FastAPI, UploadFile, File
 from PIL import Image
 
-
 from libs.base.base_predictor import BasePredictor
 
 app = FastAPI()
